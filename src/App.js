@@ -1,7 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
 function App() {
+  function click() {
+    console.log("被调用了click");
+  }
+  function click1() {
+    console.log("被调用了click1");
+  }
+  const buttonStyle = {
+    width: "100px",
+    height: "50px",
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +26,12 @@ function App() {
         >
           Learn React
         </a>
+        <button style={buttonStyle} onClick={click}>
+          调用click
+        </button>
+        <button style={buttonStyle} onClick={click1}>
+          调用click1
+        </button>
       </header>
     </div>
   );
