@@ -407,41 +407,6 @@ module.exports = function (webpackEnv) {
                 and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
               },
             },
-
-            // {
-            //   test: /\.(js)$/,
-            //   loader: path.join(__dirname, "../src/loader/consoleLoader.js"),
-            //   options: {
-            //     // Assuming you have Babel configuration in consoleLoader.js
-            //     babelrc: false,
-            //     configFile: false,
-            //     presets: [
-            //       ["@babel/preset-env", { targets: "defaults" }],
-            //       "@babel/preset-react", // Add this line for JSX support
-            //     ],
-            //   },
-            // },
-
-            // {
-            //   test: /\.(js|jsx)$/,
-            //   // include: paths.appSrc,
-            //   loader: path.join(__dirname, "../src/loader/consoleLoader.js"),
-            //   options: {
-            //     babelrc: false,
-            //     configFile: false,
-            //     compact: false,
-            //     presets: [
-            //       [
-            //         require.resolve("babel-preset-react-app"),
-            //         {
-            //           runtime: hasJsxRuntime ? "automatic" : "classic",
-            //         },
-            //       ],
-            //     ],
-            //   },
-            // },
-            // Process application JS with Babel.
-            // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {
               test: /\.(js|mjs|jsx|ts|tsx)$/,
               include: paths.appSrc,

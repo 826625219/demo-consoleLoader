@@ -820,4 +820,148 @@ function App() {
 _c = App;
 var _default = exports.default = App;
 var _c;
-$RefreshReg$(_c, "App");
+$RefreshReg$(_c, "App");================================================
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+var _client = _interopRequireDefault(require("react-dom/client"));
+require("./index.css");
+var _App = _interopRequireDefault(require("./App"));
+var _reportWebVitals = _interopRequireDefault(require("./reportWebVitals"));
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _jsxFileName = "/Users/zhengmingsheng/Code/gongchenghua1/src/index.js";
+const root = _client.default.createRoot(document.getElementById('root'));
+root.render( /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_react.default.StrictMode, {
+  children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_App.default, {}, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 5
+  }, void 0)
+}, void 0, false, {
+  fileName: _jsxFileName,
+  lineNumber: 9,
+  columnNumber: 3
+}, void 0));
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+(0, _reportWebVitals.default)();================================================
+/Users/zhengmingsheng/Code/gongchenghua1/src/App.js================================================
+/Users/zhengmingsheng/Code/gongchenghua1/src/App.js================================================
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _logo = _interopRequireDefault(require("./logo.svg"));
+require("./App.css");
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _jsxFileName = "/Users/zhengmingsheng/Code/gongchenghua1/src/App.js";
+function App() {
+  function click() {
+    console.log("被调用了click", "\u8C03\u7528\u70B9\u4F4D\u4E8E/Users/zhengmingsheng/Code/gongchenghua1/src/App.js\u6587\u4EF6", "\u7B2C7\u884C");
+  }
+  function click1() {
+    console.log("被调用了click1", "\u8C03\u7528\u70B9\u4F4D\u4E8E/Users/zhengmingsheng/Code/gongchenghua1/src/App.js\u6587\u4EF6", "\u7B2C10\u884C");
+  }
+  const buttonStyle = {
+    width: "100px",
+    height: "50px",
+    marginTop: "20px"
+  };
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    className: "App",
+    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("header", {
+      className: "App-header",
+      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("img", {
+        src: _logo.default,
+        className: "App-logo",
+        alt: "logo"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+        children: ["Edit ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("code", {
+          children: "src/App.js"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 16
+        }, this), " and save to reload."]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+        className: "App-link",
+        href: "https://reactjs.org",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        children: "Learn React"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+        style: buttonStyle,
+        onClick: click,
+        children: "\u8C03\u7528click"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+        style: buttonStyle,
+        onClick: click1,
+        children: "\u8C03\u7528click1"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 16,
+    columnNumber: 5
+  }, this);
+}
+_c = App;
+var _default = exports.default = App;
+var _c;
+$RefreshReg$(_c, "App");================================================
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
+function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+const reportWebVitals = onPerfEntry => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    Promise.resolve().then(() => _interopRequireWildcard(require('web-vitals'))).then(({
+      getCLS,
+      getFID,
+      getFCP,
+      getLCP,
+      getTTFB
+    }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
+var _default = exports.default = reportWebVitals;

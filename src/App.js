@@ -10,6 +10,7 @@ function App() {
   const buttonStyle = {
     width: "100px",
     height: "50px",
+    marginTop: "20px",
   };
   return (
     <div className="App">

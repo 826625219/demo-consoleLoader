@@ -1,16 +1,6 @@
 const core = require("@babel/core"); //babel核心模块
 let types = require("@babel/types"); //用来生成或者判断节点的AST语法树的节点
-const pathlib = require("path");
 const fs = require("fs");
-// const Debugout = require("debugout");
-const mylocalstorage = require("localStorage");
-// const bugout = new Debugout();
-
-// instead of console.log
-
-let sourceCode = `
-  console.log("日志")
-`;
 
 const logPlugin = {
   visitor: {
@@ -31,9 +21,6 @@ const logPlugin = {
               "/Users/zhengmingsheng/Code/gongchenghua1/src/loader/code.txt",
               "================================================\n" + filename
             );
-            //输出文件的相对路径
-            // const relativeName = pathlib.resolve
-            //   .replace(/\\/g, "/"); //兼容window
             node.arguments.push(
               types.stringLiteral(`调用点位于${filename}文件`)
             ); //向右边添加我们的行和列信息
@@ -49,15 +36,10 @@ const logPlugin = {
 };
 
 module.exports = function (sourceCode) {
-  //   console.log(typeof sourceCode);
   sourceCode = String(sourceCode);
   let fileName = null;
   if (sourceCode.indexOf("_jsxFileName") !== -1) {
     fileName = sourceCode.match(/\"\S+\"/)[0];
-    // fs.appendFileSync(
-    //   "/Users/zhengmingsheng/Code/gongchenghua1/src/loader/code.txt",
-    //   "================================================\n" + fileName
-    // );
   } else {
     fileName = "default";
   }
